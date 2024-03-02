@@ -1,3 +1,2 @@
 # Deber 1
-Diego Reinoso 
-Andres Proaño
+Diego Reinoso y Andres Proaño
