@@ -1,1 +1,16 @@
+Rendimiento del Servidor: Supongamos que NGINX maneja eficientemente las 400 conexiones simultáneas, gracias a su arquitectura basada en eventos. Observas una alta tasa de respuestas exitosas con tiempos de respuesta bajos, por ejemplo, un promedio de 20 ms por solicitud.
 
+Utilización de Recursos:
+
+CPU: La utilización de la CPU permanece por debajo del 50%, indicando que NGINX está manejando las solicitudes de manera eficiente sin saturar los recursos del servidor.
+Memoria: NGINX utiliza una cantidad moderada de memoria, por ejemplo, 200 MB, lo que es típico para una carga de trabajo de este tipo, demostrando que es ligero en términos de consumo de recursos.
+Conclusiones Hipotéticas
+Eficiencia de NGINX: NGINX se muestra como un servidor web altamente eficiente para manejar múltiples conexiones simultáneas, gracias a su modelo de manejo de eventos. Esto lo hace adecuado para cargas de trabajo elevadas, incluso en hardware limitado.
+
+Baja Latencia: La capacidad de NGINX para servir contenido estático rápidamente, incluso bajo carga pesada, es evidente por los bajos tiempos de respuesta. Esto es crucial para mantener una buena experiencia de usuario bajo condiciones de tráfico intenso.
+
+Escalabilidad: Los resultados sugieren que el servidor podría manejar un aumento en el número de solicitudes hasta cierto punto sin degradación significativa del rendimiento. Esto habla bien de la escalabilidad horizontal de NGINX, donde se podrían agregar más instancias del servidor detrás de un balanceador de carga para manejar aún más tráfico.
+
+Optimización y Monitorización: La importancia de monitorizar la utilización de recursos durante las pruebas de carga para identificar posibles cuellos de botella y áreas de optimización. Ajustes como la configuración del tamaño del búfer, el número de trabajadores de NGINX, y el uso de técnicas de caché pueden mejorar aún más el rendimiento.
+
+Importancia de la Configuración de Red: La simulación también subraya la importancia de una configuración de red adecuada para permitir la comunicación efectiva entre el cliente y el servidor, así como la necesidad de asegurar que el firewall y las reglas de seguridad permitan el tráfico HTTP/HTTPS necesario.
