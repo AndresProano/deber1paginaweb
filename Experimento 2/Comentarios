@@ -1,1 +1,25 @@
 
+Proyecto 2:
+  En el experimento 2 lo primero fue generar un documento dockerfile (https://github.com/AndresProano/deber1paginaweb/blob/main/Dockerfile) 
+  donde especificamos que se utilice la imagen de NGINX para la realización de la página web. Posteriormente, creamos un archivo index.html 
+  que es lo que mostrará nuestra página web (https://github.com/AndresProano/deber1paginaweb/blob/main/index.html).
+
+  Posterior a tener estos dos archivos, en el terminar construimos la imagen docker con " docker build -t my-nginx . ". Al ya tener construida 
+  la imagen vamos a proceder a iniciar el contenedor escribiendo "docker run -d -p 80:80 my-nginx". Con esto haremos que el puerto 80 del 
+  contenedor sea redigirido al puerto 80 del host y utilizamos la imagen my-nginx. Finalmente, para verificar que el contendor esté en 
+  funcionamiento utilizamos el comando "docker ps" 
+
+  Para realizar el test, en otro computador, necesitamos vagrant que cuente con WRK. Dentro de esta máquina virtual ejecutaremos el código 
+  "wrk -t2 -c100 -d3m https:://IP_DEL_SERVIDOR:80". Con esto nos aseguramos que se realizarán 100 conexiones simultáneas que se establecerán
+  durante la prueba de carga y durará 3 minutos. 
+
+Diferencias entre Contenedores y Maquinas virtuales: 
+  En cuanto a recursos utilizados: 
+    CPU: En VM se notó un mayor uso de CPU, esto considerando que se tiene que correr una instancia de SO por separado y requieren un hipervisor. 
+    En contenedores, se notó un menor uso de CPU debido a que se comparte el sistema operativo ocasionando que exista una menor sobrecarga de 
+    memoria y una mayor velocidad al ejecutarse.
+    Memoria: En VM se notó un mayor uso de memoria debido a que se necesitaba alojar el SO y el servidor.
+    En contenedores hay un uso mucho menor de recursos debido a que no se necesita un SO extra y mejora el uso de memoria debido a su capacidad 
+    de asignar recursos de forma dinámica segun la demanda. 
+  En conclusión, los contenedores presentan una mayor eficiencia en términos de uso de memoria y CPU en comparación con las máquinas virtuales 
+  debido a su menor sobrecarga y capacidad de asignación de recursos de forma dinámica. 
