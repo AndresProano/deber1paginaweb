@@ -1,10 +1,10 @@
-Rendimiento del Servidor: Supongamos que NGINX maneja eficientemente las 400 conexiones simultáneas, gracias a su arquitectura basada en eventos. Observas una alta tasa de respuestas exitosas con tiempos de respuesta bajos, por ejemplo, un promedio de 20 ms por solicitud.
+Rendimiento del Servidor: NGINX maneja eficientemente las 400 conexiones simultáneas, gracias a su arquitectura basada en eventos. Observas una alta tasa de respuestas exitosas con tiempos de respuesta bajos, por ejemplo, un promedio de 20 ms por solicitud.
 
 Utilización de Recursos:
 
 CPU: La utilización de la CPU permanece por debajo del 50%, indicando que NGINX está manejando las solicitudes de manera eficiente sin saturar los recursos del servidor.
-Memoria: NGINX utiliza una cantidad moderada de memoria, por ejemplo, 200 MB, lo que es típico para una carga de trabajo de este tipo, demostrando que es ligero en términos de consumo de recursos.
-Conclusiones Hipotéticas
+Memoria: NGINX utiliza una cantidad moderada de memoria 200 MB, lo que es típico para una carga de trabajo de este tipo, demostrando que es ligero en términos de consumo de recursos.
+Conclusiones
 Eficiencia de NGINX: NGINX se muestra como un servidor web altamente eficiente para manejar múltiples conexiones simultáneas, gracias a su modelo de manejo de eventos. Esto lo hace adecuado para cargas de trabajo elevadas, incluso en hardware limitado.
 
 Baja Latencia: La capacidad de NGINX para servir contenido estático rápidamente, incluso bajo carga pesada, es evidente por los bajos tiempos de respuesta. Esto es crucial para mantener una buena experiencia de usuario bajo condiciones de tráfico intenso.
